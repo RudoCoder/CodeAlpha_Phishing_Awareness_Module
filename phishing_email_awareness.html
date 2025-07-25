@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Training</title>
+    <style>
+        body {font-family: Arial, sans-serif ; line-height: 1.6; margin: 20px; background: #f9f9f9;}
+        header {background: #2560a39a; color: white; padding: 1em; text-align: center;}
+        .slide {display: none; padding: 20px; max-width: 800px; margin: 1em auto; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+        .slide.active {display: block;}
+        h1, h2 {color: #0a3d62;}
+        h3 {color: #2c3e50;}
+        button {margin: 10px 5px; padding: 10px 15px; background-color: #003366; color: white; border: none; border-radius: 5px; cursor: pointer;}
+        button:hover {background-color: #0055a5;}
+
+        ul {margin-left: 20px;}
+        .quiz-result {font-weight: bold;}
+        .quiz-result.correct {color: green;}
+        .quiz-result.incorrect {color: red;}
+        .quiz-question {margin: 1em 0;}
+        .quiz-question p {font-weight: bold;}
+        .quiz-option {margin: 0.5em 0; padding: 5px;}
+
+        /* Style for feedback Highlighting */
+        .correct-answer {background-color: #d4edda; border-left: 5px solid #28a745;}
+        .incorrect-answer {background-color: #f8d7da; border-left: 5px solid #dc3545;}
+    </style>
+</head>
+<body>
+    <h1>Phishing Awareness Training Module</h1>
+
+    <div class="slide active" id="slide1">
+        <h2>Welcome to Phishing Awareness Training!</h2>
+        <p>Welcome! Learn how to recognize and protect yourself against phishing attacks</p>
+    </div>
+
+    <div class="slide" id="slide2">
+        <h2>What is Phishing?</h2>
+        <p>Phishing is a type of cyber attack where attackers impersonate legitimate entities to trick individuals into providing sensitive information, such as usernames, passwords, or credit card details.</p>
+        <p>Phishing invloves deceptive tactics aimed at stealing sensitive information resulting in identity theft, Malware and Ransomware installation, Backdoors (access to systems) to Launch Future Attacks, reputational damage, unauthorized transactions, data sold to Criminals and Third Parties, loss of Intellectual Property and Financial losses.</p>
+        <ul>
+            Phishing is not only a technical threat but also a human-centered one. To effectively combat phishing attacks, a multi-layered approach to email security is essential. This includes:
+
+            <li>
+                <strong>1. Email Authentication Protocols</strong>
+                Implementing protocols such as SPF, DKIM, and DMARC helps verify the authenticity of senders and prevent domain spoofing. SPF defines which mail servers can send on your behalf, DKIM adds a digital signature to emails, and DMARC enforces policies for handling unauthenticated emails while offering insight into spoofing attempts.
+            </li>
+            <li>
+                <strong>2. Email Privacy Measures</strong>
+                Use TLS to encrypt emails in transit and prevent interception. For end-to-end encryption, S/MIME ensures only the intended recipient can read the email content. Trusted certificate authorities like DigiCert and Sectigo can provide digital certificates for S/MIME.
+            </li>
+            <li>
+                <strong>3. Brand Indicators for Message Identification (BIMI)</strong>
+                BIMI enhances brand trust by displaying your verified logo in supported inboxes. To implement BIMI, your domain must have SPF, DKIM, and DMARC set up, plus a Verified Mark Certificate (VMC) from an authorized certification provider.
+            </li>
+            <li>
+                <strong>4. Security Awareness Training</strong>
+                Regular training sessions for employees are crucial. They should learn to recognize phishing signs, avoid suspicious attachments, and follow secure practices. Phishing simulations can help reinforce these skills.
+            </li>
+            <li>
+                Consequences of Successful Attacks Include:
+
+                Identity theft, data loss, unauthorized access
+
+                Malware/ransomware infections
+
+                Financial losses and reputational harm
+            </li>
+        </ul>
+    </div>
+
+    <div class="slide" id="slide3">
+        <h2>Types of Phishing Attacks</h2>
+        <ul>
+            <li><strong>Email Phishing:</strong> The most common form, where attackers send fraudulent emails to trick users into revealing personal information.</li>
+            <li><strong>Spearfishing:</strong> Targeted phishing attacks aimed at specific individuals or organizations, often using personalized information.</li>
+            <li><strong>Whaling:</strong> A type of spear phishing that targets high-profile individuals like executives or senior management.</li>
+            <li><strong>Vishing:</strong> Voice phishing, where attackers use phone calls to deceive victims into providing sensitive information.</li>
+            <li><strong>Smishing:</strong> SMS phishing, where attackers send text messages to trick users into clicking malicious links or sharing personal data.</li>
+        </ul>
+    </div>
+
+    <div class="slide" id="slide4">
+        <h2>Recognizing Phishing Emails</h2>
+        <p>Look for these signs to identify phishing emails:</p>
+        <ul>
+            <li>Generic greetings (e.g., "Dear Customer") instead of your name.</li>
+            <li>Urgent or threatening language urging immediate action.</li>
+            <li>Suspicious email addresses or domains that don't match the sender's identity.</li>
+            <li>Spelling and grammatical errors in the email content.</li>
+            <li>Unusual attachments or links that seem out of place.</li>
+        </ul>
+        <p>Always verify the sender's email address and be cautious of unexpected requests for sensitive information.</p>
+    </div>
+
+    <div class="slide" id="slide5">
+        <h2>multi-layered Email Security Measures</h2>
+        <ul>
+            <li><strong>Email Authentication Protocols:</strong> Implement SPF, DKIM, and DMARC to verify sender authenticity and prevent domain spoofing.</li>
+            <li><strong>Email Privacy Measures:</strong> Use TLS for email encryption in transit and S/MIME for end-to-end encryption.</li>
+            <li><strong>Brand Indicators for Message Identification (BIMI):</strong> Display your verified logo in supported inboxes to enhance brand trust.</li>
+            <li><strong>Security Awareness Training:</strong> Regularly train employees to recognize phishing signs and follow secure practices.</li>
+        </ul>
+
+    </div>
+
+    <div class="slide" id="slide6">
+        <h2>Best Practices to Avoid Phishing Attacks</h2>
+        <ul>
+            <li>Always verify the sender's email address before clicking on links or downloading attachments.</li>
+            <li>Use strong, unique passwords and enable two-factor authentication (2FA) whenever possible.</li>
+            <li>Keep your software and antivirus programs up to date to protect against known vulnerabilities.</li>
+            <li>Be cautious of unsolicited emails, especially those requesting sensitive information or urging immediate action.</li>
+            <li>Report suspicious emails to your IT department or security team for further investigation.</li>
+        </ul>
+    </div>
+
+    <div class="slide" id="slide7">
+        <h2>Recognizing Phishing emails and Fake websites</h2>
+
+        <ul>
+            <li>Look for mispelled domains (e.g, paypa1.com)</li>
+            <li>Check for urgency, threats, or strange grammar</li>
+            <li>Hover over links to verify URLs before clicking</li>
+            <li>Never open attachments from unknown senders</li>
+            <li>Watch out for unexpected login pages or logos</li>
+            <li>Use browser security features to identify unsafe sites</li>
+        </ul>
+    </div>
+
+    <div class="slide" id="slide7">
+        <h2>Social Engineering Tactics</h2>
+        <ul>
+            <li>Exploiting trust (posing as HR, CEO, CFO etc)</li>
+            <li>Fear tactics ("Your account will be closed!")</li>
+            <li>Agent Action needed ("Click now")</li>
+            <li><strong>Fake rewards:</strong> Offering tempting rewards or threatening negative consequences.</li>
+        </ul>
+    </div>
+
+    <div class="slide" id="slide8">
+        <h2>Quiz Time</h2>
+        <h3>Make sure you have read through all slide before attempting the quiz</h3>
+        <form id="quizForm">
+            <div class="quiz-question" id="question1">
+                <p><strong>1. What should you do if you receive a suspicious email?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q1" value="0">Click the link to verify</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="1"> Hover over links and report</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="0"> Ignore and delete immediately</label>
+            </div>
+
+            <div class="quiz-question" id="question2">
+                <p><strong>2. True or False: All emails from your manager are safe.</strong></p>
+                <label class="quiz-option"><input type="radio" name="q2" value="1"> False</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="0"> True</label>
+            </div>
+
+            <div class="quiz-question" id="question3">
+                <p><strong>3. What does SPF stand for in email security?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q3" value="1"> Sender Policy Framework</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="0"> Secure Phishing Format</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="0"> Simple Protocol Filter</label>
+            </div>
+
+            <div class="quiz-question" id="question4">
+                <p><strong>4. Which of these is a sign of a fake website?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q4" value="0"> A secure HTTPS connection</label>
+                <label class="quiz-option"><input type="radio" name="q4" value="1"> A misspelled domain name</label>
+                <label class="quiz-option"><input type="radio" name="q4" value="0"> A company logo</label>
+            </div>
+
+            <div class="quiz-question" id="question5">
+                <p><strong>5. What is the role of DKIM?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q5" value="1"> Verifies the authenticity of email messages</label>
+                <label class="quiz-option"><input type="radio" name="q5" value="0"> Deletes spam emails automatically</label>
+                <label class="quiz-option"><input type="radio" name="q5" value="0"> Encrypts the entire mailbox</label>
+            </div>
+
+            <div class="quiz-question" id="question6">
+                <p><strong>6. Which file attachment is most likely to be dangerous?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q6" value="0"> .TXT</label>
+                <label class="quiz-option"><input type="radio" name="q6" value="0"> .PDF</label>
+                <label class="quiz-option"><input type="radio" name="q6" value="1"> .EXE</label>
+            </div>
+
+            <div class="quiz-question" id="question7">
+                <p><strong>7. Which protocol adds encryption to email in transit?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q7" value="1"> TLS</label>
+                <label class="quiz-option"><input type="radio" name="q7" value="0"> HTTP</label>
+                <label class="quiz-option"><input type="radio" name="q7" value="0"> FTP</label>
+            </div>
+
+            <div class="quiz-question" id="question8">
+                <p><strong>8. How often should phishing training occur?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q8" value="0"> Once every five years</label>
+                <label class="quiz-option"><input type="radio" name="q8" value="1"> Regularly, with simulations</label>
+                <label class="quiz-option"><input type="radio" name="q8" value="0"> Only after a breach</label>
+            </div>
+
+            <div class="quiz-question" id="question9">
+                <p><strong>9. What is a VMC used for?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q9" value="0"> Virus Monitoring Certificate</label>
+                <label class="quiz-option"><input type="radio" name="q9" value="1"> Verified Mark Certificate</label>
+                <label class="quiz-option"><input type="radio" name="q9" value="0"> Visual Mail Controller</label>
+            </div>
+
+            <div class="quiz-question" id="question10">
+                <p><strong>10. Which is the safest way to verify a request for payment?</strong></p>
+                <label class="quiz-option"><input type="radio" name="q10" value="1"> Call the sender directly using known contact</label>
+                <label class="quiz-option"><input type="radio" name="q10" value="0"> Reply to the email</label>
+                <label class="quiz-option"><input type="radio" name="q10" value="0"> Forward to a friend</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+            <p id="quizResult" class="quiz-result"></p>
+        </form>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        // Define correct answer for each question
+        // The value corresponds to the 'value' attribute of the correct radio button
+        const correctAnswers = {
+            q1: '1', // Hover over links and report
+            q2: '1', // False
+            q3: '1', // Sender Policy Framework
+            q4: '1', // A misspelled domain name
+            q5: '1', // Verifies the authenticity of email messages
+            q6: '1', // .EXE
+            q7: '1', // TLS
+            q8: '1', // Regularly, with simulations
+            q9: '1', // Verified Mark Certificate
+            q10: '1' // Call the sender directly using known contact
+        };
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const quizResultElement = document.getElementById('quizResult');
+
+            // Clear previous feedback by removing highlight classes from all options
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                option.classList.remove('correct-answer', 'incorrect-answer');
+        });
+
+            for (let i = 1; i <= 10; i++) {
+                const questionName = `q${i}`;
+                const userAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                const correctAnswerValue = correctAnswers[questionName];
+                const allOptionsForQuestion = document.querySelectorAll(`input[name="${questionName}"]`);
+
+                // Iterate through all options for the current question to apply highlighting
+                allOptionsForQuestion.forEach(optionInput => {
+                    const parentLabel = optionInput.closest('label.quiz-option');
+
+                    // If this option is the correct answer, highlight it green
+                    if (optionInput.value === correctAnswerValue) {
+                        parentLabel.classList.add('correct-answer');
+                    }
+
+                    // If the user selected this option
+                    if (userAnswer && optionInput === userAnswer) {
+                        if (userAnswer.value === correctAnswerValue) {
+                        score += 1; // Increment score only for correct answers
+                        // The correct-answer class is already added above
+                        } else {
+                            pentLabel.classList.add('incorrect-answer'); // Highlight incorrect answers
+                        }
+                    }
+                });
+            }
+
+
+            // Display the overall quiz result with score
+            if (score === 10) {
+                quizResultElement.textContent = `You scored ${score}/10. Perfect score! You're phishing aware!`;
+                quizResultElement.style.color = "green";
+            } else {
+                quizResultElement.textContent = `You scored ${score}/10. Please review your answers.`;
+                quizResultElement.style.color = "red"; // Set to red for non-perfect scores
+            }
+        }
+        // Show the first slide initially
+        showSlide(currentSlide);
+    </script>
+
+</body>
+</html>
