@@ -52,4 +52,4 @@ This module was developed to enhance organizational resilience against phishing 
 
 1. Clone or download this repository:
    ```bash
-   https://github.com/RudoCoder/CodeAlpha_Phishing_Awareness_Module
+   https://github.com/RudoCoder/CodeAlpha_Phishing_Awareness_Module.git
